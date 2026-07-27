@@ -46,11 +46,17 @@ a {
   color: inherit;
 }
 
-h1,
+h1 {
+   font-family: var(--font-display);
+   margin: 0;
+}
+
 h2,
 h3 {
   font-family: var(--font-display);
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* ============ Editor tab bar ============ */
@@ -368,15 +374,16 @@ h3 {
   border-style: dashed;
 }
 
-.skill-card__icon {
-  width: 30px;
-  height: 30px;
-  color: var(--ink-dark-text);
+.skill-card__icon{
+    font-size: 42px;
+    color: var(--ink-dark-text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.skill-card__icon svg {
-  width: 100%;
-  height: 100%;
+.skill-card__icon i{
+    font-size: inherit;
 }
 
 .skill-card__label {

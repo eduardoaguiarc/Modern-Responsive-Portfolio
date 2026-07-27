@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lines = [
     { prompt: '$ whoami', response: 'Eduardo — Estudante de Engenharia de Software' },
     { prompt: '$ cat foco.txt', response: 'Backend com Java + Spring Boot (e frontend também)' },
-    { prompt: '$ echo $OBJETIVO', response: 'Vaga júnior/pleno antes de dezembro de 2028' },
+    { prompt: '$ echo $OBJETIVO', response: 'Conseguir uma vaga de estágio e melhorar como dev' },
   ];
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
