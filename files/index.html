@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eduardo — Desenvolvedor Backend em formação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de navegação estilo "abas de editor" -->
+  <header class="editor-bar" id="editor-bar">
+    <div class="editor-bar__inner">
+      <div class="editor-bar__brand">
+        <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+      </div>
+      <nav class="tabs" id="tabs">
+        <a class="tab is-active" href="#hero" data-tab>index.html</a>
+        <a class="tab" href="#sobre" data-tab>sobre.js</a>
+        <a class="tab" href="#skills" data-tab>skills.json</a>
+        <a class="tab" href="#projetos" data-tab>projetos/</a>
+        <a class="tab" href="#contato" data-tab>contato.sh</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero reveal" id="hero">
+      <div class="hero__text">
+        <p class="eyebrow">// bem-vindo ao meu README</p>
+        <h1 class="hero__title">Eduardo<br><span class="hero__title--muted">Engenharia de Software</span></h1>
+        <p class="hero__lede">
+          Estudante de Engenharia de Software, focado em desenvolvimento fullstack com Java e Spring Boot — React e Angular, 
+          construindo os fundamentos para minha primeira vaga como dev.
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">contato</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="false">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="terminal__title">eduardo@dev: ~</span>
+        </div>
+        <div class="terminal__body" id="terminal-body"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+
+    <!-- SKILLS -->
+    <section class="section section--dark reveal" id="skills">
+      <p class="eyebrow eyebrow--light">// skills.json</p>
+      <h2 class="section__title">Stack em construção</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">linguagens</h3>
+          <div class="chip-row">
+            <span class="chip">Java <i class="chip__level">POO</i></span>
+            <span class="chip">SQL <i class="chip__level">consultas complexas</i></span>
+            <span class="chip">JavaScript <i class="chip__level">ES6+</i></span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">frontend</h3>
+          <div class="chip-row">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">backend (em progresso)</h3>
+          <div class="chip-row">
+            <span class="chip chip--learning">Spring Boot</span>
+            <span class="chip chip--learning">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">ferramentas</h3>
+          <div class="chip-row">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section reveal" id="projetos">
+      <p class="eyebrow">// projetos/</p>
+      <h2 class="section__title">Commits que valem a pena mostrar</h2>
+
+      <div class="projects">
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__hash">#a1b2c3d</span>
+            <span class="project-card__status">em desenvolvimento</span>
+          </div>
+          <h3>Cadastro de Usuário</h3>
+          <p>
+            Aplicação CRUD em Spring Boot para cadastro de usuários, construída como exercício prático
+            à frente do conteúdo formal do curso de Java — incluindo depuração real de erros de
+            compilação e regras de negócio na camada de serviço.
+          </p>
+          <div class="chip-row">
+            <span class="chip chip--sm">Java</span>
+            <span class="chip chip--sm">Spring Boot</span>
+          </div>
+        </article>
+
+        <article class="project-card project-card--placeholder">
+          <div class="project-card__head">
+            <span class="project-card__hash">#0000000</span>
+            <span class="project-card__status">adicione o seu</span>
+          </div>
+          <h3>Seu próximo projeto aqui</h3>
+          <p>
+            Espaço reservado — substitua por um novo projeto, com link para o repositório e uma
+            descrição curta do problema que ele resolve.
+          </p>
+          <div class="chip-row">
+            <span class="chip chip--sm">tag</span>
+            <span class="chip chip--sm">tag</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--dark reveal" id="contato">
+      <p class="eyebrow eyebrow--light">// contato.sh</p>
+      <h2 class="section__title">Vamos conversar</h2>
+      <p class="section__lede">
+        Aberto a oportunidades de estágio ou vaga júnior. Preencha os campos abaixo — o botão abre
+        seu app de e-mail com a mensagem já pronta.
+      </p>
+
+      <form class="terminal-form" id="contact-form">
+        <label class="terminal-form__row">
+          <span class="terminal-form__flag">--nome</span>
+          <input type="text" name="nome" required placeholder="seu nome" />
+        </label>
+        <label class="terminal-form__row">
+          <span class="terminal-form__flag">--email</span>
+          <input type="email" name="email" required placeholder="seu@email.com" />
+        </label>
+        <label class="terminal-form__row terminal-form__row--area">
+          <span class="terminal-form__flag">--mensagem</span>
+          <textarea name="mensagem" required placeholder="sobre o que você quer falar?"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">$ enviar --mensagem</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Eduardo</span>
+    <span class="footer__links">
+      <a href="mailto:seu-email@exemplo.com">e-mail</a>
+      <a href="#">github</a>
+      <a href="#">linkedin</a>
+    </span>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
